@@ -59,10 +59,7 @@ class Simulator:
             # visualize.plotting(self.model.signal[self.network.source[0]]['image'], _ops[3](), current_period )
 
             print('label of this image is ' + str(self.model.signal[self.network.source[0]]['label']))
-            # print('spike-response of input layer is ' + str(self.model.signal[self.network.connection[0]]['spike_response']))
-            # print('voltage of hidden-layer is ' + str(self.model.signal[self.network.population[0]]['membrane_potential']))
             print('spike-time of hidden-layer is ' + str(self.model.signal[self.network.population[0]]['spike_time']))
-            # print('voltage of output-layer is ' + str(self.model.signal[self.network.population[1]]['membrane_potential']))
             print('spike-time of output-layer is ' + str(self.model.signal[self.network.population[1]]['spike_time']))
 
             if step == self.sampling_period:
